@@ -4,7 +4,6 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
-// Register service worker for PWA
 const updateSW = registerSW({
   onNeedRefresh() {
     if (confirm('New version available! Reload to update?')) {
